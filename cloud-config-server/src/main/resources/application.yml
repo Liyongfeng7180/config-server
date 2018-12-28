@@ -1,0 +1,14 @@
+server:
+  port: 8088 #端口号
+
+spring:
+  application:
+    name: Config-Server #模块名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Liyongfeng7180/config-server.git #服务的git地址
+          search-paths: /**  #配置文件所在目录
+          username: liyongfeng7180@163.com  # git 用户名
+          password: Lyf.649655840   # git 密码
